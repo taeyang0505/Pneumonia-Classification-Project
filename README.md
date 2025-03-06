@@ -1,9 +1,9 @@
 # Pneumonia-Classification-Project
 
-## Overview
+## 1.Project Overview
 This project focuses on classifying pneumonia cases from chest X-ray images using deep learning techniques. The dataset is sourced from the [RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge). The main goal is to classify images into pneumonia-positive (1) or pneumonia-negative (0) categories using convolutional neural networks (CNNs).
 
-## Dataset and Preprocessing
+## 2.Dataset and Preprocessing
 ### Dataset Used
 - **stage_2_train_labels.csv**: Contains labels for training images.
 - **stage_2_train_images/**: Directory containing X-ray images.
@@ -14,7 +14,7 @@ This project focuses on classifying pneumonia cases from chest X-ray images usin
 - Augment training data using rotation, flipping, and contrast adjustments.
 - Split the dataset into 80% training/validation and 20% testing.
 
-## Model Architecture
+## 3.Model Architecture
 - Implemented a convolutional neural network (CNN) using `tensorflow.keras`.
 - **Model Layers**:
   - **Conv2D** layers with ReLU activation for feature extraction.
@@ -24,7 +24,7 @@ This project focuses on classifying pneumonia cases from chest X-ray images usin
 - **Loss Function**: Binary cross-entropy.
 - **Optimizer**: Adam.
 
-## Training and Validation
+## 4.Training and Validation
 ### Training
 The model was trained using the following configuration:
 ```python
@@ -47,7 +47,7 @@ history = model.fit(
 - Hyperparameters were adjusted based on validation performance.
 - **Final validation accuracy**: **78.23%**
 
-## Results and Analysis
+## 5.Results and Analysis
 - **Final Test Accuracy**: **78.96%**
 - Evaluated model performance on the test dataset.
 - Plotted training and validation loss/accuracy curves.
@@ -56,14 +56,14 @@ history = model.fit(
   - Validation accuracy reached **78.23%**, indicating good generalization.
   - Loss consistently decreased, confirming effective learning.
 
-## Conclusion
+## 6.Conclusion
 - Successfully classified pneumonia cases from X-ray images using deep learning.
 - Future improvements:
   - Experiment with different CNN architectures (e.g., ResNet, EfficientNet).
   - Fine-tune hyperparameters for better generalization.
   - Increase dataset diversity through additional augmentation techniques.
 
-## Project Structure
+## 7.Project Structure
 ```
 Pneumonia_Classification_Project/
 │── notebooks/                 # Jupyter Notebooks
@@ -76,5 +76,5 @@ Pneumonia_Classification_Project/
 │── README.md                  # Project documentation
 ```
 
-This project demonstrates the application of deep learning in medical imaging and serves as a portfolio piece showcasing expertise in data science, AI, and healthcare analytics.
+This project demonstrates the application of deep learning in medical imaging and serves as a portfolio that demonstrates exploration in the fields of data science, AI, and medical analytics.
 
