@@ -1,4 +1,5 @@
 # Pneumonia-Classification-Project
+Using Python technology and deep learning, I classified pneumonia in the Chest X-ray image.
 
 ## 1.Project Overview
 This project focuses on classifying pneumonia cases from chest X-ray images using deep learning techniques. The dataset is sourced from the [RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge). The main goal is to classify images into pneumonia-positive (1) or pneumonia-negative (0) categories using convolutional neural networks (CNNs).
