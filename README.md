@@ -7,14 +7,17 @@ This project focuses on classifying pneumonia cases from chest X-ray images usin
 ## 2.Project Structure
 ```
 Pneumonia_Classification_Project/
-│── notebooks/                 # Jupyter Notebooks
-│── src/                       # Source code for preprocessing and training
-│── models/                    # Saved model weights
-│── data/                      # Dataset files
-│   ├── stage_2_train_labels.csv   # Training labels
-│   ├── stage_2_train_images/      # X-ray image files
-│── results/                   # Output graphs and metrics
-│── README.md                  # Project documentation
+│── notebooks/                      # Jupyter Notebooks
+│   ├── pneumonia_classification.ipynb  # Main Jupyter Notebook
+│   ├── Pneumonia_Project/               # Project-related data and scripts
+│   │   ├── data/                         # Dataset files
+│   │   │   ├── stage_2_train_labels.csv  # Training labels
+│   │   │   ├── stage_2_train_images/     # X-ray image files
+│   │   ├── processed_images/             # Preprocessed image files
+│── src/                          # Source code for preprocessing and training
+│── models/                       # Saved model weights
+│── results/                       # Output graphs and metrics
+│── README.md                      # Project documentation
 ```
 
 ## 3.Dataset and Preprocessing
