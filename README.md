@@ -4,7 +4,20 @@ Using Python technology and deep learning, I classified pneumonia in the Chest X
 ## 1.Project Overview
 This project focuses on classifying pneumonia cases from chest X-ray images using deep learning techniques. The dataset is sourced from the [RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge). The main goal is to classify images into pneumonia-positive (1) or pneumonia-negative (0) categories using convolutional neural networks (CNNs).
 
-## 2.Dataset and Preprocessing
+## 2.Project Structure
+```
+Pneumonia_Classification_Project/
+│── notebooks/                 # Jupyter Notebooks
+│── src/                       # Source code for preprocessing and training
+│── models/                    # Saved model weights
+│── data/                      # Dataset files
+│   ├── stage_2_train_labels.csv   # Training labels
+│   ├── stage_2_train_images/      # X-ray image files
+│── results/                   # Output graphs and metrics
+│── README.md                  # Project documentation
+```
+
+## 3.Dataset and Preprocessing
 ### Dataset Used
 - **stage_2_train_labels.csv**: Contains labels for training images.
 - **stage_2_train_images/**: Directory containing X-ray images.
@@ -15,7 +28,7 @@ This project focuses on classifying pneumonia cases from chest X-ray images usin
 - Augment training data using rotation, flipping, and contrast adjustments.
 - Split the dataset into 80% training/validation and 20% testing.
 
-## 3.Model Architecture
+## 4.Model Architecture
 - Implemented a convolutional neural network (CNN) using `tensorflow.keras`.
 - **Model Layers**:
   - **Conv2D** layers with ReLU activation for feature extraction.
@@ -25,7 +38,7 @@ This project focuses on classifying pneumonia cases from chest X-ray images usin
 - **Loss Function**: Binary cross-entropy.
 - **Optimizer**: Adam.
 
-## 4.Training and Validation
+## 5.Training and Validation
 ### Training
 The model was trained using the following configuration:
 ```python
@@ -48,7 +61,7 @@ history = model.fit(
 - Hyperparameters were adjusted based on validation performance.
 - **Final validation accuracy**: **78.23%**
 
-## 5.Results and Analysis
+## 6.Results and Analysis
 - **Final Test Accuracy**: **78.96%**
 - Evaluated model performance on the test dataset.
 - Plotted training and validation loss/accuracy curves.
@@ -57,25 +70,12 @@ history = model.fit(
   - Validation accuracy reached **78.23%**, indicating good generalization.
   - Loss consistently decreased, confirming effective learning.
 
-## 6.Conclusion
+## 7.Conclusion
 - Successfully classified pneumonia cases from X-ray images using deep learning.
 - Future improvements:
   - Experiment with different CNN architectures (e.g., ResNet, EfficientNet).
   - Fine-tune hyperparameters for better generalization.
   - Increase dataset diversity through additional augmentation techniques.
-
-## 7.Project Structure
-```
-Pneumonia_Classification_Project/
-│── notebooks/                 # Jupyter Notebooks
-│── src/                       # Source code for preprocessing and training
-│── models/                    # Saved model weights
-│── data/                      # Dataset files
-│   ├── stage_2_train_labels.csv   # Training labels
-│   ├── stage_2_train_images/      # X-ray image files
-│── results/                   # Output graphs and metrics
-│── README.md                  # Project documentation
-```
 
 This project demonstrates the application of deep learning in medical imaging and serves as a portfolio that demonstrates exploration in the fields of data science, AI, and medical analytics.
 
