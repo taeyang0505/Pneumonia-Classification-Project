@@ -13,11 +13,15 @@ Pneumonia_Classification_Project/
 │   │   ├── data/                         # Dataset files
 │   │   │   ├── stage_2_train_labels.csv  # Training labels
 │   │   │   ├── stage_2_train_images/     # X-ray image files
+│   │   │   ├── stage_2_test_images/      # Test X-ray images
+│   │   │   ├── stage_2_detailed_class_info.csv  # Additional metadata
+│   │   │   ├── stage_2_sample_submission.csv  # Sample submission format
+│   │   │   ├── rsna-pneumonia-detection-challenge.zip  # Raw dataset archive
 │   │   ├── processed_images/             # Preprocessed image files
 │── src/                          # Source code for preprocessing and training
 │── models/                       # Saved model weights
 │── results/                       # Output graphs and metrics
-│── README.md                      # Project documentation
+│── README.md          
 ```
 
 ## 3.Dataset and Preprocessing
